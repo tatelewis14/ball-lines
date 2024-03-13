@@ -34,7 +34,7 @@ export class Effect {
     }
     init(arr, amount) {
         for(let i = 0; i<amount; i++) {
-            let radius = Math.floor(Math.random() * 10 + 5)
+            let radius = Math.floor(Math.random() * 4 + 1)
             let x = Math.random() * (this.canvas.width - radius*2) + radius;
             let y = Math.random() * (this.canvas.height - radius*2) + radius    
             let vx = (Math.random() - 0.5) * 3;
@@ -49,7 +49,7 @@ export class Effect {
             ctx.fillStyle = 'rgba(0,0,0,0.1)'
             ctx.fillRect(0,0, this.width, this.height)
             this.connectParticles(ctx, arr)
-
+            ctx.fillStyle = gradient
             arr.forEach(obj=>{
                 obj.draw(ctx)
                 obj.update(this.width, this.height)
