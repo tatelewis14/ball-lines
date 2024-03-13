@@ -46,7 +46,8 @@ export class Effect {
     animate(ctx, arr) {
         const animate = () =>{
             this.rafId = requestAnimationFrame(animate)
-            ctx.clearRect(0,0, this.width, this.height)
+            ctx.fillStyle = 'rgba(0,0,0,0.1)'
+            ctx.fillRect(0,0, this.width, this.height)
             this.connectParticles(ctx, arr)
 
             arr.forEach(obj=>{
