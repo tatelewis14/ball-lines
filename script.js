@@ -7,7 +7,7 @@ const ctx = canvas.getContext('2d');
 canvas.width = innerWidth;
 canvas.height = innerHeight;
 let area = canvas.width * canvas.height;
-let particleAmount = area/3000
+let particleAmount = area/2000
 
 let particles = []
 
