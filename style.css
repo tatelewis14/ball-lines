@@ -1,0 +1,17 @@
+body, html{
+    padding: 0;
+    margin: 0;
+}
+:root{
+--side-bar-offset: 20px;
+}
+.sidebar {
+width:var(--side-bar-offset);
+height:100px;
+background-color:grey;
+display: none;
+}
+#gc {
+    background-color: black;
+    position: absolute;
+}
